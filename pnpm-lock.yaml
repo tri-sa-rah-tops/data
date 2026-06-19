@@ -47,7 +47,7 @@ importers:
         version: 28.0.0
       tsdown:
         specifier: ^0.22.2
-        version: 0.22.2(tsx@4.22.4)(typescript@6.0.3)(unrun@0.3.1)
+        version: 0.22.2(tsx@4.22.4)(typescript@6.0.3)
       tsx:
         specifier: ^4.22.4
         version: 4.22.4
@@ -57,9 +57,6 @@ importers:
       typescript-eslint:
         specifier: ^8.60.1
         version: 8.60.1(eslint@10.4.1)(typescript@6.0.3)
-      unrun:
-        specifier: ^0.3.1
-        version: 0.3.1
       zod:
         specifier: ^4.4.3
         version: 4.4.3
@@ -1781,16 +1778,6 @@ packages:
     resolution: {integrity: sha512-9OdaqO5kwqR+1kVgHAhsp5vPNU0hnxRa26rBFNfNgM7M6pNtgzeBn3s/xbyCQL3dcjzOatcef6UUHpB/6MaETg==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  unrun@0.3.1:
-    resolution: {integrity: sha512-onIck/oNnCaytwths1ZVp1LK2Gq2hPoyFhiHebObuUXqR3S0uHuLLaBK8K6mRRgV7Ptip8AnNvaUsgzwWwBZuA==}
-    engines: {node: ^22.13.0 || >=24.0.0}
-    hasBin: true
-    peerDependencies:
-      synckit: ^0.11.11
-    peerDependenciesMeta:
-      synckit:
-        optional: true
-
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -3501,7 +3488,7 @@ snapshots:
       '@ts-morph/common': 0.29.0
       code-block-writer: 13.0.3
 
-  tsdown@0.22.2(tsx@4.22.4)(typescript@6.0.3)(unrun@0.3.1):
+  tsdown@0.22.2(tsx@4.22.4)(typescript@6.0.3):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -3521,7 +3508,6 @@ snapshots:
     optionalDependencies:
       tsx: 4.22.4
       typescript: 6.0.3
-      unrun: 0.3.1
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -3576,10 +3562,6 @@ snapshots:
   unique-slug@5.0.0:
     dependencies:
       imurmurhash: 0.1.4
-
-  unrun@0.3.1:
-    dependencies:
-      rolldown: 1.1.0
 
   uri-js@4.4.1:
     dependencies:
